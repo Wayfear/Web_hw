@@ -3,11 +3,11 @@ html{
 }
 
 body {
-    /*font-family: Georgia, "Times New Roman", Times, serif;*/
     color: #555;
     padding: 0px;
     margin: 0px;
     height: 100%;
+    overflow: auto;
 
 }
 
@@ -35,13 +35,13 @@ h6, .h6 {
 
 }
 
-nav{
+.nav{
     width: 100%;
     line-height: 40px;
     background-color: #ECECEC;
 }
 
-aside{
+.aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +49,6 @@ aside{
     width: 20%;
     height: 100%;
     background-color: #2c3c49;
-    /*color: #2c3c49;*/
 
 }
 
@@ -68,98 +67,22 @@ aside{
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-
 }
-
-.blog-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.blog-title {
-    margin-top: 30px;
-    margin-bottom: 0;
-    font-size: 60px;
-    font-weight: normal;
-}
-.blog-description {
-    font-size: 20px;
-    color: #999;
-}
-
-.blog-main {
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-.blog-footer {
-    padding: 40px 0;
-    color: #999;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-top: 1px solid #e5e5e5;
-}
-.blog-footer p:last-child {
-    margin-bottom: 0;
-}
-
 
 
 .header{
     width: 100%;
     background-color: rgb(44, 60, 73);
-
     color: white;
     line-height: 50px;
 }
 
-.secondheader{
-    width: 100%;
-    line-height:40px;
-    background-color: rgb(236,236,236);
-}
-
-.maincontent{
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(44,60,73);
-}
-
-.intro{
-    width: 65%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.postblog{
-    width: 35%;
-    overflow-y: scroll;
-}
-
-.mainblog{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.blogsiderbar{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(44,60,73);
-}
-
-
 
 .blogcontent{
-    padding-top: 10px;
+    padding-top: 30px;
     width: 80%;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 
@@ -174,40 +97,35 @@ aside{
     align-items: center;
     justify-content: center;
     background-color: rgb(44,60,73);
+    margin-top: 40px;
     height: 40px;
 }
 
 
 @media screen and (max-width: 800px){
-    .intro{
-        display: none;
-    }
-    .postblog{
-        width: 100%;
-        display:flex;
-        flex-direction:row;
-        justify-content:center;
-        align-items:flex-start;
-        overflow: scroll;
-        font-size: 0.9em;
-    }
+
     .context{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    /*aside{*/
-        /*display: none;*/
-    /*}*/
+
+    .aside{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        background-color: rgb(44,60,73);
+    }
+
     .blogcontent{
         width: 100%;
-        height: 70%;
-        overflow: visible;
     }
+
     .footpay{
         display: none;
     }
+
     .phonepay{
         display: flex;
         flex-direction:row;
@@ -217,14 +135,5 @@ aside{
         height: 50px;
         background-color: rgb(44,60,73);
     }
-    aside{
-        display: flex;
-        width: 100%;
-        height: 200px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(44,60,73);
 
-    }
 }
